@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChangeDeliveryWindow</class>
+ <widget class="QDialog" name="ChangeDeliveryWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:  qlineargradient( spread:pad,  x1:0, y1:0, x2:1, y2:0,  stop:0 rgba(105, 57, 153, 100),  stop:1 rgba(165, 105, 189, 255));  border: 1px solid #5D3B9B;  border-radius: 5px;
+font-family: Everlasting;</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>301</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">backgroud-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+   </property>
+   <widget class="QPushButton" name="Close_button_Clicked">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>490</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 12px;
+} 
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>Закрыть окно </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChangeOrder_button_Clicked">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>430</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 12px;
+font-size: 10pt;
+} 
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+border: none;
+font-size: 12pt;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Изменить статус доставки</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Addres">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>180</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+padding-left: 10px;</string>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LastName">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FirstName">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MiddleName">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>70</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Отчество</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Телефон:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>45</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 10pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Адрес:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Status">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>350</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+font-size: 10pt;
+color: white;
+}
+QComboBox::Item {
+background-color: rgba(255,255,255,40);
+color:white;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>В обработке</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Доставляется</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Завершён</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Отменён</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Статус:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: navy;
+text-shadow: 1px 1px 2px black;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Доставка успешно изменена!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Phone">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>**</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChangeAddres_button_Clicked">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>106</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+font-weight: bold;
+border: none;
+font-size: 10pt;
+background-color: none;
+} 
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить Адрес</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string> Покупка:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DateBuy">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>88</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Дата_Покупки:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Доставка:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChangeEndDate_button_Clicked">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>106</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+font-weight: bold;
+border: none;
+font-size: 10pt;
+background-color: none;
+} 
+QPushButton:hover{
+background-color: rgba(255,255,255,40);
+}
+
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить Дату</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AddressError">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;
+text-shadow: 1px 1px 2px black;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Доставка успешно изменена!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DateError">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;
+text-shadow: 1px 1px 2px black;
+font-weight: bold;
+font-size: 9pt;
+border: none;
+background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Доставка успешно изменена!</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="EndDate">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>270</y>
+      <width>191</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+padding-left: 10px;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
